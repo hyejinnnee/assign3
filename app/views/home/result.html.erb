@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <center>
+        <h2>신이 <%= @name %> 를 만들 때 <br></h2>
+        <div>
+            <% @result.each_with_index do |r,index| %>
+                <p>
+                  <b><%= r %></b> <%= @spoons[index] %> 
+                  <%= image_tag @img_spoons[index] %>
+                </p>
+            <%end%>
+        </div>    
+    </center>
+</div>
